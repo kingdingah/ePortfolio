@@ -333,6 +333,16 @@ html, body
   height: 100%;
 }
 
+.resume-content
+{
+  display: block;
+}
+
+.resume-mob
+{
+  display: none;
+}
+
 .contact-content div
 {
   width: calc(100%  - 160px);
@@ -424,7 +434,7 @@ html, body
   width: 60%;
 }
 
-.about-content img, .skills-content img,
+.skills-content img,
 .resume-content img, .contact-content img
 {
   height: calc(100% - 100px);
@@ -432,6 +442,35 @@ html, body
   margin-top: 50px;
   position: absolute;
   z-index: 100;
+}
+
+.resume button
+{
+  background-color: white;
+  color: #252525;
+  outline: none;
+  border: none;
+  padding: 10px 25px !important;
+  font-family: montbold;
+  font-size: 20px;
+  bottom: 50px;
+  margin-top: 15px;
+}
+
+.about-content > div
+{
+  width: 100%;
+  height: 200px;
+  text-align: center;
+}
+
+.about-content > div img
+{
+  height: 180px;
+  width: auto;
+  border-radius: 50%;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
 }
 
 .skills-content .prev
@@ -681,4 +720,9 @@ div.owl-carousel, .owl-stage, .owl-item
   height: auto;
   line-height: auto;
   font-family: montbold;
+}
+
+.hamburger, .minimenu
+{
+  display: none;
 }

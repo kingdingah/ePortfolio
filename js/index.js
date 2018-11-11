@@ -10,6 +10,12 @@ $(document).ready(function() {
   var resumeh = $(".resume-title-area").height();
   var contacth = $(".contact-title-area").height();
 
+  var resumeimg = $(".resume-content img").width();
+  var resumeb = $(".resume-content button").width();
+
+  $(".resume-content img").css({'left':'calc(50% - ' + (resumeimg/2) + 'px)'});
+  $(".resume-content button").css({'left':'calc(50% - ' + (resumeb/2) + 'px)'});
+
   $(".langs, .soft, .artwork, .logos").owlCarousel({
     loop: true,
     autoplay: true,

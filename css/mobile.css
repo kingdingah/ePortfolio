@@ -20,7 +20,7 @@
 
 @media (max-width: 768px)
 {
-  .about-content, .contact-content
+  .about-content, .contact-content, .resume-content
   {
     width: calc(100% - 60px);
     position: absolute;
@@ -33,6 +33,41 @@
   {
     width: 100%;
     position: absolute;
+  }
+
+  .resume-content
+  {
+    display: none;
+  }
+
+  .resume-mob
+  {
+    display: block;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .resume-mob img
+  {
+    height: auto;
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 100px;
+  }
+
+  .resume-mob button
+  {
+    background-color: white;
+    color: #252525;
+    outline: none;
+    border: none;
+    padding: 10px 20px !important;
+    font-family: montbold;
+    font-size: 17px;
+    position: absolute;
+    bottom: 30px;
+    width: 240px;
+    left: calc(50% - 120px);
   }
 
   .skills1, .skills2, .skills3

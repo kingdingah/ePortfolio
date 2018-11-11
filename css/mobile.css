@@ -7,72 +7,251 @@
 
 @media (min-width: 990px) and (max-width: 1280px)
 {
-  div.quicklinks, .innerupdates, .innerfooter
-  {
-    width: 990px !important;
-  }
 
-  .sitelogo
-  {
-    height: 70px;
-    top: calc(50% - 50px);
-    left: 70px;
-  }
-
-  .imgcont span
-  {
-    font-size: 1.5em;
-    top: calc(50% + 20px);
-    left: 70px;
-  }
-
-  .innernav
-  {
-    width: 100% !important;
-  }
-
-  .navsignin
-  {
-    right: 25px;
-    height: 36px;
-    margin-top: 12px;
-    line-height: 28px;
-  }
-
-  .navlogo
-  {
-    left: 25px;
-  }
-
-  .navlogo img
-  {
-    height: 26px;
-    margin-top: 17px;
-    width: auto;
-  }
-
-  div.quicklinks-alt > div
-  {
-    height: 100px;
-    line-height: 100px;
-    font-size: 1.6em;
-  }
 }
 
 @media (max-width: 990px)
 {
-  div.main .home-item
-  {
-    width: calc(100% - 50px);
-    margin: 15px 25px;
-  }
 
-  h1.site-title
-  {
-    margin-top: 30px;
-    font-size: 2.2em;
-  }
 }
 
 
 /* END MEDIA QUERIES */
+
+@media (max-width: 768px)
+{
+  .about-content, .contact-content
+  {
+    width: calc(100% - 60px);
+    position: absolute;
+    bottom: 50px;
+    height: auto;
+    top: auto !important; left: 30px; right: auto;
+  }
+
+  .skills-content
+  {
+    width: 100%;
+    position: absolute;
+  }
+
+  .skills1, .skills2, .skills3
+  {
+    height:100%;
+  }
+
+  .skills1 .title2, .skills2 .title2
+  {
+    top: 25%;
+  }
+
+  .item span
+  {
+    font-size: 16px;
+  }
+
+  .skills-content .next, .skills-content .prev
+  {
+    top: calc(50% - 90px);
+  }
+
+
+  .skills1 .langs, .skills1 .soft, .skills2 .logos, .skills2 .artwork
+  {
+    height: 25%;
+  }
+
+  .skills1 .title1, .skills1 .title2, .skills2 .title1, .skills2 .title2
+  {
+    font-size: 22px;
+  }
+
+  .about-content span, .contact-content span, .contact-content a
+  {
+    display: block;
+    position: relative;
+    font-size: 18px;
+    height: auto;
+    line-height: 20px;
+    float: left;
+    margin-bottom: 5px;
+  }
+
+  .about-content .leftside, .contact-content .leftside
+  {
+    font-family: montheavy;
+    color: #f7f7f7;
+    width: 40%;
+  }
+
+  .about-content .rightside, .contact-content .rightside
+  {
+    font-family: montlight;
+    color: #f7f7f7;
+    text-align: right;
+    width: 60%;
+  }
+
+
+  .sociallinks
+  {
+    display: none;
+  }
+
+  .moblogo, .logo
+  {
+    width: auto;
+    height: 42px;
+    position: fixed;
+    left: 17.5px;
+    top: 15px;
+    z-index: 100;
+  }
+
+  .myname, .location, .mobloc
+  {
+    position: fixed;
+    width: 600px;
+    left: 75px;
+    top: -40px;
+    letter-spacing: -1px;
+    line-height: 30px;
+    font-family: montlight;
+    font-size: 24px;
+    color: #f7f7f7;
+    z-index: 100;
+  }
+
+  .location, .mobloc
+  {
+    font-family: montbold;
+    z-index: 50;
+    top: 25px;
+  }
+
+  .about-title-area, .skills-title-area, .resume-title-area, .contact-title-area
+  {
+    position: relative;
+    left: 0;
+    width: calc(100% - 60px);
+    top: 70px !important;
+  }
+
+  .iam
+  {
+    font-size: 50px;
+  }
+
+  .skills-title, .about-title,
+  .resume-title, .contact-title,
+  .about-subtitle
+  {
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: -15px;
+    letter-spacing: -1px;
+  }
+
+  .about-subtitle
+  {
+    font-size: 20px;
+    line-height: 20px;
+    font-family: montlight;
+    margin-top: -0px;
+  }
+
+  .about-desc, .skills-desc, .contact-desc, .resume-desc
+  {
+    display: block;
+    font-size: 14px;
+    text-align: justify;
+    font-family: montlight;
+    margin-top: 10px;
+    padding-top: 10px !important;
+    line-height: 15px;
+  }
+
+  .footer
+  {
+    display: none;
+  }
+
+  .hamburger
+  {
+    display: block;
+    position: fixed;
+    top: 25px;
+    right: 20px;
+    height: 22px;
+    width: auto;
+    z-index: 100;
+  }
+
+  .minimenu
+  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+    display: none;
+  }
+
+  .mobitems
+  {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    height: auto;
+  }
+
+  .mobitems > a
+  {
+    width: 100%;
+    height: 60px;
+    font-size: 40px;
+    font-family: montbold;
+    display: block;
+    padding-left: 25px !important;
+    color: #f7f7f7 !important;
+    line-height: 60px;
+  }
+
+  .minimenu .sociallinks
+  {
+    position: absolute;
+    bottom: 0;
+    top: auto; left: auto; right: auto;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    display: block;
+  }
+
+  .minimenu .sociallinks > div.discnotice
+  {
+    position: absolute;
+    bottom: 60px;
+    text-align: center;
+    display: none;
+  }
+
+  .minimenu .sociallinks > div.discnotice span
+  {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .minimenu .disc, .minimenu .disc2
+  {
+    display: block;
+    float: left;
+  }
+
+  .minimenu .sociallinks > div
+  {
+    position: absolute;
+  }
+}

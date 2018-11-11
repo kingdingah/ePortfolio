@@ -4,7 +4,7 @@ html, body
 {
   min-height: 100%;
   height: 100%;
-  background-color: #eee !important;
+  background-color: #f7f7f7 !important;
 }
 
 *
@@ -56,14 +56,6 @@ html, body
   z-index: 100;
 }
 
-.uc .mainlogo
-{
-  width: 180px;
-  height: auto;
-  position: absolute;
-  left: 100px;
-}
-
 .uc .inner img
 {
   width: 250px;
@@ -102,7 +94,7 @@ html, body
 
 .col-obj
 {
-  background-color: #eee;
+  background-color: #f7f7f7;
   height: auto;
   width: 100%;
   margin-bottom: 30px;
@@ -132,7 +124,7 @@ html, body
 
 .col-obj .obj-tags
 {
-  color: #eee;
+  color: #f7f7f7;
   margin-top: 2px;
   padding: 0 20px 20px 20px !important;
 }
@@ -150,16 +142,6 @@ html, body
   height: 100%;
   width: 280px;
   background-color: #fff;
-}
-
-.logo-box
-{
-  width: 280px;
-  height: 280px;
-  background: #eee;
-  position: absolute;
-  top: 0;
-  right: 0;
 }
 
 .menu-box
@@ -185,7 +167,7 @@ html, body
 
 .menu-box span:hover
 {
-  background-color: #eee;
+  background-color: #f7f7f7;
 }
 
 #lg1
@@ -206,7 +188,7 @@ html, body
   bottom: 40px;
 }
 
-.logo
+.logo, .moblogo
 {
   width: auto;
   height: 50px;
@@ -242,7 +224,7 @@ html, body
   line-height: 30px;
   font-family: montlight;
   font-size: 24px;
-  color: #eee;
+  color: #f7f7f7;
   z-index: 100;
 }
 
@@ -270,25 +252,25 @@ html, body
 .about
 {
   background-color: #9957dd;
-  color: #eee !important;
+  color: #f7f7f7 !important;
 }
 
 .skills
 {
-  background-color: #eee;
+  background-color: #f7f7f7;
   color: #333333 !important;
 }
 
 .resume
 {
   background-color: #252525;
-  color: #eee !important;
+  color: #f7f7f7 !important;
 }
 
 .contact
 {
   background-color: rgb(153, 87, 221);
-  color: #eee !important;
+  color: #f7f7f7 !important;
 }
 
 .skills-title-area, .about-title-area,
@@ -308,7 +290,7 @@ html, body
 }
 
 .skills-title, .about-title,
-.resume-title, .contact-title
+.resume-title, .contact-title, .about-subtitle
 {
   display: block;
   font-size: 50px;
@@ -316,6 +298,14 @@ html, body
   font-family: montbold;
   margin-top: -25px;
   letter-spacing: -2px;
+}
+
+.about-subtitle
+{
+  font-size: 36px;
+  line-height: 36px;
+  font-family: montlight;
+  margin-top: -0px;
 }
 
 .about-desc, .skills-desc, .contact-desc, .resume-desc
@@ -330,7 +320,7 @@ html, body
   border-top: 1px solid black;
 }
 
-.about-desc, .resume-desc
+.about-desc, .resume-desc, .contact-desc
 {
   border-top: 1px solid white;
 }
@@ -341,6 +331,50 @@ html, body
   position: absolute;
   right: 0;
   height: 100%;
+}
+
+.contact-content div
+{
+  width: calc(100%  - 160px);
+  position: absolute;
+  right: 100px;
+  top: 220px;
+  height: calc(100% - 440px);
+}
+
+.contact-content div > div
+{
+  width: 100%;
+  position: relative;
+  right: 0;
+  top: 0;
+  height: 33.333333%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.contact-content div > div a,
+.contact-content div > div span
+{
+  color: #9957dd;
+  display: block;
+  text-align: center;
+  font-family: montlight;
+  font-size: 34px;
+  line-height: 34px;
+  position: absolute;
+  top: calc(50% - 25px);
+  padding: 30px !important;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  vertical-align: middle;
+}
+
+.about-content, .contact-content
+{
+  width: calc(50% - 200px);
+  right: 200px;
+  height: auto;
 }
 
 .dots
@@ -354,14 +388,40 @@ html, body
   font-size: 40px;
 }
 
-.dots span:hover, .logo:hover
+.logo:hover
 {
-  cursor: pointer;
+  cursor: help;
 }
 
 .dots span.activedot
 {
-  color: #eee;
+  color: #f7f7f7;
+}
+
+.about-content span, .contact-content span, .contact-content a
+{
+  display: block;
+  position: relative;
+  font-size: 34px;
+  height: auto;
+  line-height: 40px;
+  float: left;
+  margin-bottom: 10px;
+}
+
+.about-content .leftside, .contact-content .leftside
+{
+  font-family: montheavy;
+  color: #f7f7f7;
+  width: 40%;
+}
+
+.about-content .rightside, .contact-content .rightside
+{
+  font-family: montlight;
+  color: #f7f7f7;
+  text-align: right;
+  width: 60%;
 }
 
 .about-content img, .skills-content img,
@@ -374,12 +434,12 @@ html, body
   z-index: 100;
 }
 
-.about-content .prev, .skills-content .prev
+.skills-content .prev
 {
   display: none;
 }
 
-.about-content .prev, .skills-content .prev
+.skills-content .prev
 {
   position: absolute;
   opacity: 0.3;
@@ -390,7 +450,7 @@ html, body
   margin-top: 0;
 }
 
-.about-content .next, .skills-content .next
+.skills-content .next
 {
   position: absolute;
   opacity: 0.3;
@@ -438,7 +498,7 @@ html, body
   width: calc(100% - 100px);
   right: 50px;
   top: 100px;
-  background: #eee;
+  background: #f7f7f7;
 }
 
 .skills1, .skills2
@@ -472,6 +532,20 @@ div.owl-carousel, .owl-stage, .owl-item
 {
   width: 100%;
   height: 50%;
+}
+
+.skills2 .artwork img
+{
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  transition: 0.2s ease;
+  -webkit-transition: 0.2s ease;
+}
+
+.skills2 .artwork img:hover
+{
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
 }
 
 .skills1 .title1, .skills1 .title2,
@@ -553,4 +627,58 @@ div.owl-carousel, .owl-stage, .owl-item
   display: block;
   float: left;
   font-size: 24px;
+}
+
+.notch
+{
+
+}
+
+.disc, .disc2
+{
+  padding: 10px 0px 10px 15px !important;
+  font-size: 20px;
+  margin-top: 10px;
+  color: #f7f7f7;
+  font-family: montlight;
+  float: left;
+  display: none;
+}
+
+.mydiscord:hover
+{
+  cursor: help;
+}
+
+.disc2
+{
+  padding: 10px 15px 10px 5px !important;
+  font-family: montbold;
+}
+
+.footer
+{
+  width: 100%;
+  height: 60px;
+  background-color: #333;
+}
+
+.footer div
+{
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  font-family: montlight;
+  color: white;
+  text-align: center;
+  display: block;
+  float: left;
+}
+
+.footer span:last-child
+{
+  width: auto;
+  height: auto;
+  line-height: auto;
+  font-family: montbold;
 }

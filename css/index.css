@@ -1,0 +1,556 @@
+/* index css init*/
+
+html, body
+{
+  min-height: 100%;
+  height: 100%;
+  background-color: #eee !important;
+}
+
+*
+{
+  margin: 0 auto;
+  padding: 0 !important;
+  max-width: 100% !important;
+}
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Heebo:900');
+
+@font-face
+{
+    font-family: cocolight;
+    src: url('../fonts/coco/CocoGothic-Light_trial.ttf');
+}
+
+@font-face
+{
+    font-family: montlight;
+    src: url('../fonts/mont/Mont-Light.ttf');
+}
+
+@font-face
+{
+    font-family: montbold;
+    src: url('../fonts/mont/Mont-Bold.ttf');
+}
+
+@font-face
+{
+    font-family: montheavy;
+    src: url('../fonts/mont/Mont-Heavy.ttf');
+}
+
+
+/* Main Styles */
+
+.uc
+{
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.uc .mainlogo
+{
+  width: 180px;
+  height: auto;
+  position: absolute;
+  left: 100px;
+}
+
+.uc .inner img
+{
+  width: 250px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.uc .inner
+{
+  position: absolute;
+  left: 400px;
+}
+
+.uc .site
+{
+  font-size: 75px;
+  font-family: montheavy;
+  line-height: 65px;
+  letter-spacing: -3px;
+  display: block;
+}
+
+.main
+{
+  width:calc(100% - 60px);
+  margin: 0 30px;
+}
+
+.main-col
+{
+  width: calc(33.3333333% - 30px);
+  margin: 40px 15px 0 15px;
+  float: left;
+  height: auto;
+}
+
+.col-obj
+{
+  background-color: #eee;
+  height: auto;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.col-obj img
+{
+  width: 100%;
+}
+
+.col-obj h1
+{
+  font-size: 32px;
+  color: #222;
+  font-family: montheavy;
+  letter-spacing: -2px;
+  width: cacl(100% - 40px);
+  margin: 10px 20px 0 20px;
+}
+
+.col-obj .obj-desc
+{
+  width: cacl(100% - 40px);
+  padding: 0 20px 0px 20px !important;
+  display: block;
+}
+
+.col-obj .obj-tags
+{
+  color: #eee;
+  margin-top: 2px;
+  padding: 0 20px 20px 20px !important;
+}
+
+.col-obj .obj-tags .tag:hover
+{
+  color: red;
+}
+
+.menu-side
+{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 280px;
+  background-color: #fff;
+}
+
+.logo-box
+{
+  width: 280px;
+  height: 280px;
+  background: #eee;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.menu-box
+{
+  position: absolute;
+  top: 280px;
+  left: 0;
+  width: 100%;
+}
+
+.menu-box span
+{
+  display: block;
+  width: 100%;
+  height: 65px;
+  line-height: 65px;
+  padding: 0 25px !important;
+  font-family: montheavy;
+  letter-spacing: -1px;
+  font-size: 35px;
+  text-align: center;
+}
+
+.menu-box span:hover
+{
+  background-color: #eee;
+}
+
+#lg1
+{
+  position: absolute;
+  height: auto;
+  width: 170px;
+  left: 55px;
+  top: 30px;
+}
+
+#lg2
+{
+  position: absolute;
+  height: auto;
+  width: 170px;
+  left: 55px;
+  bottom: 40px;
+}
+
+.logo
+{
+  width: auto;
+  height: 50px;
+  position: fixed;
+  left: 17.5px;
+  top: 15px;
+  z-index: 100;
+}
+
+.maincont
+{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.menuitems
+{
+  width: 900px;
+  position: absolute;
+  left: calc(50% - 450px);
+}
+
+.myname, .location
+{
+  position: fixed;
+  width: 600px;
+  left: 90px;
+  top: -40px;
+  letter-spacing: -1px;
+  line-height: 30px;
+  font-family: montlight;
+  font-size: 24px;
+  color: #eee;
+  z-index: 100;
+}
+
+.location
+{
+  font-family: montbold;
+  z-index: 50;
+  top: 30px;
+}
+
+.myname span
+{
+  font-family: montbold;
+}
+
+/* Skills area */
+
+.skills, .about, .resume, .contact
+{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.about
+{
+  background-color: #9957dd;
+  color: #eee !important;
+}
+
+.skills
+{
+  background-color: #eee;
+  color: #333333 !important;
+}
+
+.resume
+{
+  background-color: #252525;
+  color: #eee !important;
+}
+
+.contact
+{
+  background-color: rgb(153, 87, 221);
+  color: #eee !important;
+}
+
+.skills-title-area, .about-title-area,
+.resume-title-area, .contact-title-area
+{
+  position: absolute;
+  left: 90px;
+  width: calc(50% - 180px);
+}
+
+.iam
+{
+  display: block;
+  font-size: 80px;
+  font-family: montheavy;
+  letter-spacing: -2px;
+}
+
+.skills-title, .about-title,
+.resume-title, .contact-title
+{
+  display: block;
+  font-size: 50px;
+  line-height: 55px;
+  font-family: montbold;
+  margin-top: -25px;
+  letter-spacing: -2px;
+}
+
+.about-desc, .skills-desc, .contact-desc, .resume-desc
+{
+  display: block;
+  font-size: 20px;
+  text-align: justify;
+  font-family: montlight;
+  margin-top: 10px;
+  padding-top: 15px !important;
+  line-height: 24px;
+  border-top: 1px solid black;
+}
+
+.about-desc, .resume-desc
+{
+  border-top: 1px solid white;
+}
+
+.about-content, .skills-content, .resume-content, .contact-content
+{
+  width: 50%;
+  position: absolute;
+  right: 0;
+  height: 100%;
+}
+
+.dots
+{
+  position: fixed;
+  z-index: 100;
+  width: 200px;
+  text-align: center;
+  left: calc(50% - 100px);
+  bottom: 15px;
+  font-size: 40px;
+}
+
+.dots span:hover, .logo:hover
+{
+  cursor: pointer;
+}
+
+.dots span.activedot
+{
+  color: #eee;
+}
+
+.about-content img, .skills-content img,
+.resume-content img, .contact-content img
+{
+  height: calc(100% - 100px);
+  width: auto;
+  margin-top: 50px;
+  position: absolute;
+  z-index: 100;
+}
+
+.about-content .prev, .skills-content .prev
+{
+  display: none;
+}
+
+.about-content .prev, .skills-content .prev
+{
+  position: absolute;
+  opacity: 0.3;
+  height: 40px;
+  width: auto;
+  top: calc(50% - 20px);
+  left: 20px;
+  margin-top: 0;
+}
+
+.about-content .next, .skills-content .next
+{
+  position: absolute;
+  opacity: 0.3;
+  height: 40px;
+  width: auto;
+  top: calc(50% - 20px);
+  right: 20px;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  margin-top: 0;
+}
+
+.next:hover, .prev:hover
+{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.sociallinks
+{
+  position: fixed;
+  z-index: 200;
+  top: 10px;
+  right: 20px;
+}
+
+.sociallinks a
+{
+  display: block;
+  float: left;
+  font-size: 24px;
+  padding: 15px 8px !important;
+}
+
+.sociallinks a i
+{
+    color: white;
+}
+
+.about1, .about2, .about3,
+.skills1, .skills2, .skills3
+{
+  position: absolute;
+  height: calc(100% - 200px);
+  width: calc(100% - 100px);
+  right: 50px;
+  top: 100px;
+  background: #eee;
+}
+
+.skills1, .skills2
+{
+  overflow: hidden;
+}
+
+div.owl-carousel, .owl-stage, .owl-item
+{
+  max-width: none !important;
+}
+
+.owl-stage-outer, .owl-stage, .owl-item
+{
+  height: 100%;
+}
+
+.owl-item
+{
+  float: left;
+}
+
+.owl-carousel .owl-item img
+{
+  display: block;
+  width: auto !important;
+}
+
+.skills1 .langs, .skills1 .soft,
+.skills2 .logos, .skills2 .artwork
+{
+  width: 100%;
+  height: 50%;
+}
+
+.skills1 .title1, .skills1 .title2,
+.skills2 .title1, .skills2 .title2
+{
+  font-family: montbold;
+  text-align: center;
+  color: #252525;
+  font-size: 34px;
+  display: block;
+  width: 100%;
+}
+
+.skills1 .title1, .skills2 .title1
+{
+  position: absolute;
+  top: 0;
+}
+
+.skills1 .title2, .skills2 .title2
+{
+  position: absolute;
+  top: 50%;
+}
+
+
+.owl-nav
+{
+  display: none;
+}
+
+.item
+{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  float: left;
+  margin-top: 40px;
+}
+
+.item img
+{
+  width: 80%;
+  margin-left: 10%;
+  height: auto;
+  position: relative;
+  margin-top: 0;
+}
+
+.item span
+{
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-family: montlight;
+  font-size: 26px;
+    line-height: 25px;
+}
+
+.skills2
+{
+  display: none;
+}
+
+.skills-content .amenu
+{
+  position: absolute;
+  width: calc(100% - 100px);
+  right: 50px;
+  top: 100px;
+}
+
+.skills-content .amenu a {
+  font-family: montbold;
+  color: #252525;
+  opacity: 0.3;
+  width: 33.333333%;
+  text-align: center;
+  display: block;
+  float: left;
+  font-size: 24px;
+}

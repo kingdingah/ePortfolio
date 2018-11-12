@@ -446,7 +446,7 @@ html, body
 
 .resume button
 {
-  background-color: white;
+  background-color: #f7f7f7;
   color: #252525;
   outline: none;
   border: none;
@@ -455,6 +455,12 @@ html, body
   font-size: 20px;
   bottom: 50px;
   margin-top: 15px;
+}
+
+.resume button:hover
+{
+  cursor: pointer;
+  background-color: #eee;
 }
 
 .about-content > div
@@ -581,10 +587,11 @@ div.owl-carousel, .owl-stage, .owl-item
   -webkit-transition: 0.2s ease;
 }
 
-.skills2 .artwork img:hover
+.skills2 .artwork img:hover, .skills2 .logos img:hover
 {
   filter: grayscale(0);
   -webkit-filter: grayscale(0);
+  cursor: pointer;
 }
 
 .skills1 .title1, .skills1 .title2,
@@ -725,4 +732,55 @@ div.owl-carousel, .owl-stage, .owl-item
 .hamburger, .minimenu
 {
   display: none;
+}
+
+.lightbox
+{
+  z-index: 1000;
+  background: rgba(0,0,0,0.7);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.lightbox img
+{
+  width: 700px;
+  height: auto;
+  left: calc(50% - 350px);
+  top: 100px;
+  position: absolute;
+}
+
+.lightbox .lbclose
+{
+  right: 25px;
+  top: 0px;
+  position: absolute;
+  font-size: 60px;
+  color: white;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  display: block;
+}
+
+.lightbox .lbtitle
+{
+  width: 400px;
+  left: calc(50% - 200px);
+  display: block;
+  bottom: 50px;
+  position: absolute;
+  font-size: 34px;
+  color: white;
+  font-family: montbold;
+  text-align: center;
+}
+
+.lbclose:hover
+{
+  cursor: pointer;
 }
